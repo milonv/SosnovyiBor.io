@@ -1,0 +1,68 @@
+@import "./fonts.css";
+@import "./header.css";
+
+:root {
+    --blueColor: #122133;
+    --beigeColor: rgba(214, 166, 122, 0.98);
+    --fontCeraPro: Cera Pro;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+html {
+    line-height: 1.15; 
+    font-size: 10px;
+    font-family: var(--fontCeraPro);
+}
+  
+body {
+    margin: 0;
+    height: 100vh;
+}
+  
+body.lock {
+    overflow: hidden;
+}
+  
+h1,
+h2,
+h3,
+h5,
+p,
+ul,
+li {
+    margin: 0;
+}
+  
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+}
+  
+a {
+    text-decoration: none;
+    color: #000000;
+}
+  
+img {
+    display: block;
+    width: 100%;
+}
+  
+  /* input:active, :hover, :focus {
+      outline: 0;
+      outline-offset: 0;
+  } */
+
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
+
