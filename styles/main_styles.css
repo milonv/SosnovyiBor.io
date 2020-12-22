@@ -1,9 +1,11 @@
 @import "./fonts.css";
 @import "./header.css";
+@import "./home_section.css";
 
 :root {
     --blueColor: #122133;
     --beigeColor: rgba(214, 166, 122, 0.98);
+    --bgColor: #f9f8f6;
     --fontCeraPro: Cera Pro;
 }
 
@@ -19,7 +21,9 @@ html {
   
 body {
     margin: 0;
+    padding: 0;
     height: 100vh;
+    background-color: var(--bgColor);
 }
   
 body.lock {
@@ -34,6 +38,7 @@ p,
 ul,
 li {
     margin: 0;
+    color: var(--blueColor);
 }
   
 ul,
@@ -57,6 +62,9 @@ img {
       outline-offset: 0;
   } */
 
+.main {
+    padding-top: 6.4rem;
+}
 
 @media screen and (max-width: 768px) {
 
