@@ -17,9 +17,9 @@ new Swiper('.home-slider', {
     el: '.swiper-scrollbar',
     draggable: true
   },
-  autoplay: {
-    delay: 4000,
-  },
+  // autoplay: {
+  //   delay: 4000,
+  // },
   grabCursor: true,
   slideToClickedSlide: true,
 });
