@@ -122,9 +122,9 @@ new Swiper('.layouts-slider', {
     el: '.swiper-scrollbar',
     draggable: true
   },
-  // autoplay: {
-  //   delay: 1000,
-  // },
+  autoplay: {
+    delay: 1000,
+  },
   speed: 800,
   grabCursor: true,
   slideToClickedSlide: true,
