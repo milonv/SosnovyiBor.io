@@ -61,13 +61,16 @@
 .location-specification {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     flex-direction: row;
     margin: 0 0 10px 0;
 }
 
 .location-specification__container > p {
-    font-family: 15px;
+    font-family: 14px;
     color: var(--beigeColor);
+    margin: 5px 0 0 0;
+    text-align: center;
 }
 
 .location-specification >.location-specification__container:nth-child(1) > img{
@@ -157,6 +160,11 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+    }
+
+    .location-specification__container > p {
+        font-family: 15px;
+        margin: 10px 0 0 0;
     }
 
     .specification-location > .location-specification:nth-child(1){
