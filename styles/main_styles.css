@@ -1,6 +1,11 @@
 @import "./fonts.css";
 @import "./header.css";
 @import "./home_section.css";
+@import "./project_section.css";
+@import "./location_section.css";
+@import "./layouts_section.css";
+@import "./gallery_section.css";
+@import "./footer.css";
 
 :root {
     --blueColor: #122133;
@@ -11,7 +16,7 @@
 
 * {
     box-sizing: border-box;
-  }
+}
   
 html {
     line-height: 1.15; 

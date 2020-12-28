@@ -11,18 +11,32 @@ burger.addEventListener("click", () => {
   body.classList.toggle("lock");
 });
 
+//еще 
 
-new Swiper('.home-slider', {
-  scrollbar: {
-    el: '.swiper-scrollbar',
-    draggable: true
-  },
-  // autoplay: {
-  //   delay: 4000,
-  // },
-  grabCursor: true,
-  slideToClickedSlide: true,
-});
+const link = document.querySelector(".link");
+
+link.onclick = function(e){
+  e.preventDefault();
+  const box = document.querySelector(".box"),
+  line = document.querySelector(".line-project");
+
+  box.classList.add("open");
+  link.classList.add("open");
+  line.classList.add("open");
+}
+
+
+// new Swiper('.home-slider', {
+//   scrollbar: {
+//     el: '.swiper-scrollbar',
+//     draggable: true
+//   },
+//   // autoplay: {
+//   //   delay: 4000,
+//   // },
+//   grabCursor: true,
+//   slideToClickedSlide: true,
+// });
 //ползунок 
 // setInterval(function(){
 //   document.querySelector(".home-line__title").classList.remove("active")
@@ -85,7 +99,69 @@ new Swiper('.home-slider', {
 //   console.log(8)
 
 // },7100)
+new Swiper('.home-slider', {
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true
+  },
+  // autoplay: {
+  //   delay: 1000,
+  // },
+  speed: 800,
+  grabCursor: true,
+  slideToClickedSlide: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  centeredSlides: true,
+  // initialSlide: 0,
+  // loop: true,
+});
 
+new Swiper('.layouts-slider', {
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true
+  },
+  // autoplay: {
+  //   delay: 1000,
+  // },
+  speed: 800,
+  grabCursor: true,
+  slideToClickedSlide: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  centeredSlides: true,
+  // initialSlide: 0,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 3,
+    }
+  },
+  loop: true,
+});
+
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: 50.4906317, lng: 30.6774927 };
+  const uluru2 = { lat: 50.4904611, lng: 30.6766672 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(
+    document.getElementById("map"), {
+      zoom: 17,
+      center: uluru, uluru2
+    }
+  );
+
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru, uluru2,
+    map: map,
+  });
+}
 
 
 
