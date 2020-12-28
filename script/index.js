@@ -143,11 +143,15 @@ new Swiper('.layouts-slider', {
   loop: true,
 });
 
+// let locations = [
+//   {"name": "Random 1", "lat":"48.8532774","lng":"2.2438649", "is_exact": true},
+//   {"name": "Random 2", "lat":"48.8413031","lng":"2.3106412", "is_exact": true}
+// ];
+
 // Initialize and add the map
 function initMap() {
   // The location of Uluru
   const uluru = { lat: 50.4906317, lng: 30.6774927 };
-  const uluru2 = { lat: 50.4904611, lng: 30.6766672 };
   // The map, centered at Uluru
   const map = new google.maps.Map(
     document.getElementById("map"), {
@@ -157,11 +161,62 @@ function initMap() {
   );
 
   // The marker, positioned at Uluru
+  // const marker = new google.maps.Marker({
+  //   position: uluru, uluru2,
+  //   map: map,
+  // });
+
   const marker = new google.maps.Marker({
-    position: uluru, uluru2,
-    map: map,
+    position: new google.maps.LatLng(location.lat,  location.lng),
+    title: location.name, 
+    map: map
   });
 }
+
+// function initMap() {
+//   // The location of Uluru
+//   const uluru = { lat: 50.4906317, lng: 30.6774927 };
+//   // The map, centered at Uluru
+//   const map = new google.maps.Map(
+//     document.getElementById("map"), {
+//       zoom: 17,
+//       center: uluru, uluru2
+//     }
+//   );
+
+//   // The marker, positioned at Uluru
+//   // const marker = new google.maps.Marker({
+//   //   position: uluru, uluru2,
+//   //   map: map,
+//   // });
+
+//   const marker = new google.maps.Marker({
+//     position: new google.maps.LatLng(location.lat,  location.lng),
+//     title: location.name, 
+//     map: map
+//   });
+// }
+
+function initMap() {
+  const el = document.getElementById("map");
+  const options = {
+    zoom: 17,
+    center: {lat: 50.4904611, lng: 30.6788559}
+  }
+  const myMap = new google.maps.Map(el, options);
+
+  addMarker({lat: 50.4904611, lng: 30.6788559});
+  addMarker({lat: 50.4906317, lng: 30.6796814});
+  
+
+  function addMarker(coordinates) {
+    const marker = new google.maps.Marker({
+      position: coordinates,
+      map: myMap
+    })
+  }
+}
+
 
 
 
