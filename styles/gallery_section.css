@@ -1,0 +1,354 @@
+.gallery {
+    padding: 15px 15px 15px 10px;
+    position: relative;
+}
+
+.birds9 {
+    display: none;
+}
+
+.birds10 {
+    display: none;
+}
+
+.birds11 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.birds11 > img{
+    width: 240px;
+    height: auto;
+}
+
+.line-gallery {
+    width: 250px;
+    height: 4px;
+    background-color: var(--beigeColor);
+    position: absolute;
+    left: 0;
+}
+
+
+.gallery-title {
+    margin: 30px 0 0 0;
+}
+
+.gallery-title h3 {
+    font-size: 29px;
+    text-align: center;
+}
+
+.gallery-slider {
+    margin: 70px 0 0 0;
+    overflow: hidden;
+    height: 667px;
+    width:100%;
+    transition:all 0.5s;
+}
+
+.gallery-slides {
+    
+}
+
+.gallery-slide {
+    margin: 0 0 10px 0;
+}
+
+.gallery-slides > .gallery-slide:nth-child(1) > img{
+    height: 210px;
+}
+
+.gallery-slides > .gallery-slide:nth-child(2) > img{
+    height: 135px;
+}
+
+.gallery-slides > .gallery-slide:nth-child(3) > img{
+    height: 190px;
+}
+
+.gallery-slides > .gallery-slide:nth-child(4) {
+    position: relative;
+}
+
+.gallery-slides > .gallery-slide:nth-child(4) > .gallery-slide4{
+    height: 190px;
+    opacity: 0.5;
+}
+
+.arrow{
+    height: 20px;
+    width: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 768px) {
+    .gallery {
+        padding: 25px 75px 35px 75px;
+        position: relative;
+        width: 768px;
+        margin: 0 auto;
+    }
+    
+    .birds9 {
+        display: none;
+    }
+    
+    .birds10 {
+        display: block;
+        position: absolute;
+        bottom: 115px;
+        right: 80px;
+    }
+
+    .birds10 img{
+        width: 160px;
+    }
+    
+    .birds11 {
+        position: absolute;
+        top: 130px;
+        left: 220px;
+    }
+    
+    .birds11 > img{
+        width: 240px;
+        height: auto;
+    }
+    
+    .line-gallery {
+        display: none;
+    }
+    
+    
+    .gallery-title {
+        margin: 0 45px 0 0;
+        position: absolute;
+        top: 50px;
+        left: 130px;
+    }
+    
+    .gallery-title h3 {
+        font-size: 46px;
+        text-align: start;
+    }
+    
+    .gallery-slider {
+        overflow: visible;
+        margin: 0;
+        height: 100%;
+    }
+    
+    .gallery-slides {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+    }
+    
+    .gallery-slide {
+        margin: 0;
+    }
+
+    .gallery-slides > .gallery-slide:nth-child(1) {
+        height: 380px;
+        width: 292px;
+        position: relative;
+    }
+    
+    .gallery-slides > .gallery-slide:nth-child(1) > img{
+        height: 208px;
+        width: 292px;
+        position: absolute;
+        bottom: 0;
+        /* margin: 170px 0 0 0; */
+    }
+
+    .gallery-slides > .gallery-slide:nth-child(2) {
+        height: 197px;
+        width: 314px;
+    }
+    
+    .gallery-slides > .gallery-slide:nth-child(2) > img{
+        height: 197px;
+        width: 314px;
+    }
+
+    .gallery-slides > .gallery-slide:nth-child(3) {
+        height: 175px;
+        width: 292px;
+        position: relative;
+    }
+    
+    .gallery-slides > .gallery-slide:nth-child(3) > img{
+        width: 292px;
+        height: 164px;
+        position: absolute;
+        bottom: 0;
+        /* margin: 190px 0 0 0; */
+    }
+    
+    .gallery-slides > .gallery-slide:nth-child(4) {
+        position: relative;
+        height: 209px;
+        width: 314px;
+        margin: -170px 0 0 0;
+    }
+    
+    .gallery-slides > .gallery-slide:nth-child(4) > .gallery-slide4{
+        height: 209px;
+        width: 314px;
+        opacity: 1;
+    }
+
+    .gallery-slides > .gallery-slide:nth-child(5){
+        width: 292px;
+        height: 191px;
+    }
+
+    .gallery-slides > .gallery-slide:nth-child(5) {
+        position: relative;
+        width: 292px;
+        height: 205px;
+    }
+
+    .gallery-slides > .gallery-slide:nth-child(5) > img{
+        width: 292px;
+        height: 191px;
+        position: absolute;
+        bottom: 0;
+        /* margin: 20px 0 0 0; */
+    }
+
+    .gallery-slides > .gallery-slide:nth-child(6) > img{
+        width: 314px;
+        height: 176px;
+        margin: -130px 0 0 0;
+    }
+    
+    .arrow{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .gallery {
+        padding: 25px 75px 35px 75px;
+        position: relative;
+        width: 1024px;
+        margin: 0 auto;
+    }
+    
+    .birds10 {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 160px;
+    }
+
+    .birds10 img{
+        width: 160px;
+    }
+    
+    .birds11 {
+        position: absolute;
+        top: 850px;
+        right: 600px;
+    }
+    
+    .birds11 > img{
+        width: 240px;
+        height: auto;
+    }
+
+    .gallery-title {
+        top: 25px;
+    }
+
+    .gallery-slides {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start; 
+    }
+
+    .gallery-slides > .gallery-slide:nth-child(1) {
+        height: 300px;
+        width: 375px;
+        position: relative;
+    }
+    
+    .gallery-slides > .gallery-slide:nth-child(1) > img{
+        height: 230px;
+        width: 375px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .gallery-slides > .gallery-slide:nth-child(2) {
+        height: 350px;
+        width: 400px;
+        position: relative;
+        margin-left: 15px;
+    }
+    
+    .gallery-slides > .gallery-slide:nth-child(2) > img{
+        height: 250px;
+        width: 400px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .gallery-slides > .gallery-slide:nth-child(3) {
+        height: 200px;
+        width: 375px;
+        position: relative;
+    }
+    
+    .gallery-slides > .gallery-slide:nth-child(3) > img{
+        height: 230px;
+        width: 375px;
+        position: absolute;
+        bottom: 0;
+        /* margin: 190px 0 0 0; */
+    }
+    
+    .gallery-slides > .gallery-slide:nth-child(4) {
+        position: relative;
+        height: 270px;
+        width: 480px;
+        margin: 0;
+        margin: 15px 0 0 15px;
+    }
+    
+    .gallery-slides > .gallery-slide:nth-child(4) > .gallery-slide4{
+        height: 270px;
+        width: 480px;
+        opacity: 1;
+    }
+
+    .gallery-slides > .gallery-slide:nth-child(5) {
+        /* position: relative; */
+        width: 375px;
+        height: 200px;
+        margin: -75px 0 0 0;
+    }
+
+    .gallery-slides > .gallery-slide:nth-child(5) > img{
+        width: 375px;
+        height: 191px;
+        /* position: absolute;
+        bottom: 0; */
+        /* margin: 20px 0 0 0; */
+    }
+
+    .gallery-slides > .gallery-slide:nth-child(6) > img{
+        width: 400px;
+        height: 230px;
+        margin: 15px 0 0 15px;
+    }
+
+}

@@ -137,24 +137,28 @@
                             alt="logo">
                     </div>
                     <div class="project-description">
-                        <p class="box1">
-                            Сосновый бор – это жизнь в гармонии и безопасности. 
-                            Философия нашего городка состоит в том, чтобы максимально 
-                            использовать преимущества частного дома, наслаждаясь эстетикой 
-                            и эргономикой пространства в окружении природы. При этом иметь 
-                            доступ к городской инфраструктуре. 
-                        </p>
-                        <p id="box2" style="display: none">
-                            Строительство дуплексов полностью профинансировано застройщиком 
-                            и идет непрерывно до скорого завершения. Таким образом наши 
-                            клиенты получают гарантию, что сроки сдачи домов не зависят от продаж.
-                            Наша компания не экономит на строительстве. Мы используем только 
-                            качественные материалы. Каждый элемент построенный нами продуман 
-                            и доведен до совершенства, даже крыша дома может быть использована 
-                            как зона отдыха с бассейном, зеленого сада или просто открытой веранды – так 
-                            называемая эксплуатируемая крыша.
-                        </p>
-                        <a class="link" href="#" onClick="toggle_show('box2')">...еще</a>
+                        <label class="read" for="readMore">...ещё</label>
+                        <input type="checkbox" id="readMore">
+                        <div class="box">
+                            <p>
+                                Сосновый бор – это жизнь в гармонии и безопасности. 
+                                Философия нашего городка состоит в том, чтобы максимально 
+                                использовать преимущества частного дома, наслаждаясь эстетикой 
+                                и эргономикой пространства в окружении природы. При этом иметь 
+                                доступ к городской инфраструктуре. 
+                                <br/> 
+                                <br/>
+                                Строительство дуплексов полностью профинансировано застройщиком 
+                                и идет непрерывно до скорого завершения. Таким образом наши 
+                                клиенты получают гарантию, что сроки сдачи домов не зависят от продаж.
+                                Наша компания не экономит на строительстве. Мы используем только 
+                                качественные материалы. Каждый элемент построенный нами продуман 
+                                и доведен до совершенства, даже крыша дома может быть использована 
+                                как зона отдыха с бассейном, зеленого сада или просто открытой веранды – так 
+                                называемая эксплуатируемая крыша.
+                            </p>
+                        </div>
+                        <!-- <a class="link" href="#">...еще</a> -->
                     </div>
                 </div>
                 <div class="project-specification">
@@ -388,7 +392,7 @@
                 <div class="swiper-scrollbar layouts-scrollbar"></div>
             </div>
         </section>
-        <!-- 
+        
         <section id="gallery" class="gallery">
             <div class="birds9">
                 <img 
@@ -405,6 +409,7 @@
                     src="./image/birds9.png" 
                     alt="birds">
             </div>
+            <div class="line-gallery"></div>
             <div class="gallery-title">
                 <h3>Галерея</h3>
             </div>
@@ -420,7 +425,8 @@
                         <img src="./image/3-к poor.jpg" alt="gallery-slide">
                     </div>
                     <div class="gallery-slide">
-                        <img src="./image/4-к poor.jpg" alt="gallery-slide">
+                        <img class ="gallery-slide4" src="./image/4-к poor.jpg" alt="gallery-slide">
+                        <img class="arrow" src="./image/arrow.png" alt="arrow">
                     </div>
                     <div class="gallery-slide">
                         <img src="./image/5-к poor.jpg" alt="gallery-slide">
@@ -432,7 +438,7 @@
             </div>
         </section>
     </main>
-    
+     <!--
     <footer id="contacts" class="footer">
         <div class="birds12">
             <img 
@@ -491,7 +497,7 @@
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaJd_27fPVY7P_mq0UtatELfA6OfhLkTE&callback=initMap&libraries=&v=weekly"
         defer
-    ></script>
+  ></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="./script/index.js"></script>
 </body>

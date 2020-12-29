@@ -50,8 +50,7 @@
 
 .project-description p {
     font-size: 14px;
-    text-align: justify;
-    
+    text-align: justify; 
 }
 
 .box {
@@ -61,8 +60,23 @@
     transition:all 0.5s;
 }
 
+.read {
+    font-size: 14px;
+    color: #b1b7be;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    cursor: pointer;
+}
 
-.link {
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]:checked + .box {
+    height: auto;
+}
+
+/* .link {
     font-size: 14px;
     color: #b1b7be;
     position: absolute;
@@ -76,7 +90,9 @@
 
 .box.open {
     height: 400px;
-}
+} */
+
+
 
 .project-specification {
     margin: 25px 0 50px 0;
@@ -134,7 +150,7 @@
 }
 .specification-image__container > p > br{}
 
-@media screen and (min-width: 375px) {
+/* @media screen and (min-width: 375px) {
     .box.open {
         height: 340px;
     }
@@ -144,12 +160,14 @@
     .box.open {
         height: 300px;
     }
-}
+} */
 
 @media screen and (min-width: 768px) {
     .project {
         padding: 140px 0 0 0;
         position: relative;
+        width: 768px;
+        margin: 0 auto;
     }
     
     .birds2 {
@@ -194,7 +212,7 @@
         background-color: var(--beigeColor);
         position: absolute;
         left: 310px;
-        bottom: 0;
+        bottom: -10px;
     }
     
     .logo-project {
@@ -225,15 +243,6 @@
     
     .project-description p {
         font-size: 16px;
-        height: 75px;
-    }
-    
-    .link {
-        font-size: 16px;
-    }
-
-    .box.open {
-        height: 450px;
     }
     
     .specification {
@@ -265,6 +274,8 @@
     .project {
         padding: 140px 0 100px 0;
         position: relative;
+        width: 1024px;
+        margin: 0 auto;
     }
     
     .birds2 {
@@ -304,14 +315,6 @@
         left: 0;
         bottom: -15px;
     }
-
-    .line-project.open {
-        width: 300px;
-        height: 6px;
-        position: absolute;
-        left: 0;
-        bottom: 5px;
-    }
     
     .project_title-container{}
     .project-title {
@@ -320,19 +323,6 @@
         position: absolute;
         left: 310px;
         top: -15px;
-    }
-    
-    .project-description p {
-        font-size: 17px;
-        height: 75px;
-    }
-    
-    .link {
-        font-size: 17px;
-    }
-
-    .box.open {
-        height: 290px;
     }
 
     .project-specification {

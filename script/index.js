@@ -13,9 +13,17 @@ burger.addEventListener("click", () => {
 
 //еще 
 
-function toggle_show(id) {
-	document.getElementById(id).style.display = document.getElementById(id).style.display == 'none' ? 'block' : 'none';
-}
+// const link = document.querySelector(".link");
+
+// link.onclick = function(e){
+//   e.preventDefault();
+//   const box = document.querySelector(".box"),
+//   line = document.querySelector(".line-project");
+
+//   box.classList.add("open");
+//   // link.classList.add("open");
+//   line.classList.add("open");
+// }
 
 
 // new Swiper('.home-slider', {

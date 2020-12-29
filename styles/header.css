@@ -172,6 +172,12 @@
     .header{
         padding-left: 4.2rem;
         padding-right: 4.2rem;
+        width: 768px;
+        top:0px;                /* optional but useful for most of you, choose value you want*/
+        margin-left:auto;
+        margin-right:auto;
+        left:0;
+        right:0;
     }
 
     .header-burger {
@@ -231,6 +237,9 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .header{
+        width: 1024px;
+    }
     
     .header-menu{
         justify-content: space-around;

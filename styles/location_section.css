@@ -110,6 +110,8 @@
     .location {
         padding: 20px 50px 20px 60px;
         position: relative;
+        width: 768px;
+        margin: 0 auto;
     }
 
     .birds5 {
@@ -180,8 +182,8 @@
     .location {
         padding: 54px 70px 40px 70px;
         position: relative;
-
-
+        width: 1024px;
+        margin: 0 auto;
     }
 
     /* .birds5 {
