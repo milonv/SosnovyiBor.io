@@ -237,7 +237,7 @@
 
 @media screen and (min-width: 1024px) {
     .gallery {
-        padding: 25px 75px 35px 75px;
+        padding: 80px 75px 35px 75px;
         position: relative;
         width: 1024px;
         margin: 0 auto;
@@ -246,7 +246,7 @@
     .birds10 {
         display: block;
         position: absolute;
-        top: 10px;
+        top: 90px;
         right: 160px;
     }
 
@@ -266,7 +266,7 @@
     }
 
     .gallery-title {
-        top: 25px;
+        top: 75px;
     }
 
     .gallery-slides {

@@ -76,7 +76,17 @@ img {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+.line-design-1024 {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        width: 768px;
+        position: relative;
+        margin: 0 auto;
+    }
+
     .line-design-768 {
         display: block;
         position: absolute;
@@ -86,7 +96,24 @@ img {
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 1024px) {
 
+    body {
+        width: 1024px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .line-design-768 {
+        display: none;
+    }
+
+    .line-design-1024 {
+        display: block;
+        position: absolute;
+        top: 490px;
+        left: 35px;
+        z-index: 10;
+    }
 }
 

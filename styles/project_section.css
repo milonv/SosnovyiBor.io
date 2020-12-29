@@ -272,7 +272,7 @@ input[type="checkbox"]:checked + .box {
 
 @media screen and (min-width: 1024px) {
     .project {
-        padding: 140px 0 100px 0;
+        padding: 140px 0 90px 0;
         position: relative;
         width: 1024px;
         margin: 0 auto;
@@ -314,6 +314,10 @@ input[type="checkbox"]:checked + .box {
         position: absolute;
         left: 0;
         bottom: -15px;
+    }
+
+    .project-specification {
+        margin: 70px 0 50px 0;
     }
     
     .project_title-container{}
