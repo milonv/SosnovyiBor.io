@@ -234,7 +234,7 @@
     .security__background,
     .location__background {        
         
-        /* animation-name: slideDown; */
+        animation-name: slideDown;
         animation-timing-function: ease;  
         animation-iteration-count: infinite;
         visibility: visible !important; 
@@ -267,14 +267,9 @@
     .douplex-title__container,
     .security-title__container,
     .location-title__container {
-        /* width: 450px;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        align-items: flex-start;*/
         z-index: 5; 
 
-        /* animation-name: slideRight; */
+        animation-name: slideRight;
         animation-timing-function: ease-in-out; 
         animation-iteration-count: infinite;
         visibility: visible !important;

@@ -89,7 +89,7 @@
 
 @media screen and (min-width: 768px) {
     .gallery {
-        padding: 25px 75px 35px 75px;
+        padding: 0 75px 35px 75px;
         position: relative;
         width: 768px;
         margin: 0 auto;

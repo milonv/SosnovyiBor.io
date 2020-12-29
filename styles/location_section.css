@@ -108,7 +108,7 @@
 
 @media screen and (min-width: 768px) {
     .location {
-        padding: 20px 50px 20px 60px;
+        padding: 20px 50px 5px 60px;
         position: relative;
         width: 768px;
         margin: 0 auto;
@@ -158,10 +158,16 @@
         justify-content: center;
     }
 
+    .location-description p {
+        padding: 0 15px 0 0;
+        text-align: start;
+    }
+
     .specification-location {
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-be; */
+        margin: 5px 15px 0 0;
     }
 
     .location-specification__container > p {
@@ -174,7 +180,7 @@
     }
 
     .location-specification {
-        width: 50%;
+        width: 45%;
     }
 }
 
@@ -186,32 +192,6 @@
         margin: 0 auto;
     }
 
-    /* .birds5 {
-        position: absolute;
-        left: -15px;
-        top: 320px;
-    }
-    
-    .birds5 > img{
-        width: 53px;
-        height: auto;
-    }
-    
-    .birds6 {
-        display: block;
-        position: absolute;
-        right: 20px;
-        bottom: -15px;
-    }
-
-    .birds6 > img{
-        width: 130px;
-        height: auto;
-    } */
-
-    /* .line-location {
-        display: none;
-    } */
 
     .location-container {
         display: flex;

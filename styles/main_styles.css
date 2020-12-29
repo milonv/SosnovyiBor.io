@@ -29,6 +29,7 @@ body {
     padding: 0;
     height: 100vh;
     background-color: var(--bgColor);
+    position: relative;
 }
   
 body.lock {
@@ -71,8 +72,18 @@ img {
     padding-top: 6.4rem;
 }
 
-@media screen and (max-width: 768px) {
+.line-design-768 {
+    display: none;
+}
 
+@media screen and (max-width: 768px) {
+    .line-design-768 {
+        display: block;
+        position: absolute;
+        top: 460px;
+        left: 40px;
+        z-index: 10;
+    }
 }
 
 @media screen and (max-width: 576px) {
