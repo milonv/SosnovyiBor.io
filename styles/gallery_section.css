@@ -3,6 +3,11 @@
     position: relative;
 }
 
+#gallery {
+    position: absolute;
+    top: -60px;
+}
+
 .birds9 {
     display: none;
 }
@@ -258,11 +263,15 @@
     .arrow{
         display: none;
     }
+
+    .arrow-up {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .gallery {
-        padding: 80px 75px 35px 75px;
+        padding: 100px 75px 35px 75px;
         position: relative;
         width: 1024px;
         margin: 0 auto;
@@ -271,7 +280,7 @@
     .birds10 {
         display: block;
         position: absolute;
-        top: 90px;
+        top: 110px;
         right: 160px;
     }
 
@@ -291,7 +300,7 @@
     }
 
     .gallery-title {
-        top: 75px;
+        top: 100px;
     }
 
     .gallery-slides {

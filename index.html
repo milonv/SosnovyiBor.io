@@ -58,7 +58,8 @@
     </header>
 
     <main class="main">
-        <section id="home" class="home">
+        <section class="home">
+            <span id="home"></span>
             <div class="home-line__title"></div>
             <div class="home-birds">
                 <img class="home-birds__image" src="./image/birds1.png" alt="home-tree">
@@ -115,7 +116,8 @@
             
         </section>
 
-        <section id="project" class="project">
+        <section class="project">
+            <span id="project"></span>
             <div class="birds2">
                 <img 
                     src="./image/birds2.png" 
@@ -251,7 +253,8 @@
             </div>
         </section>
 
-        <section id="location" class="location">
+        <section class="location">
+            <span id="location"></span>
             <div class="birds5">
                 <img 
                     src="./image/birds4.png" 
@@ -336,7 +339,8 @@
             </div>
         </section>
         
-        <section id="layouts" class="layouts">
+        <section class="layouts">
+            <span  id="layouts" ></span>
             <div class="birds7">
                 <img 
                     src="./image/birds4.png" 
@@ -399,7 +403,8 @@
             </div>
         </section>
         
-        <section id="gallery" class="gallery">
+        <section class="gallery">
+            <span  id="gallery"></span>
             <div class="birds9">
                 <img 
                     src="./image/birds2.png" 
@@ -446,7 +451,8 @@
         </section>
     </main>
 
-    <footer id="contacts" class="footer">
+    <footer class="footer">
+        <span id="contacts" ></span>
         <div class="line-footer"></div>
         <div class="birds12">
             <img 
@@ -509,7 +515,7 @@
                event.preventDefault();
                var id  = $(this).attr('href'),
                    top = $(id).offset().top;
-               $('body,html').animate({scrollTop: top}, 1500);
+               $('body,html').animate({scrollTop: top}, 1000);
            });
        });
     </script>

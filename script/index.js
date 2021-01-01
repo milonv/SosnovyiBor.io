@@ -16,17 +16,12 @@ new Swiper('.home-slider', {
     el: '.swiper-scrollbar',
     draggable: true
   },
-  // autoplay: {
-  //   delay: 1000,
-  // },
   speed: 800,
   grabCursor: true,
   slideToClickedSlide: true,
   slidesPerView: 1,
   spaceBetween: 20,
   centeredSlides: true,
-  // initialSlide: 0,
-  // loop: true,
 });
 
 new Swiper('.layouts-slider', {
@@ -43,7 +38,6 @@ new Swiper('.layouts-slider', {
   slidesPerView: 1,
   spaceBetween: 20,
   centeredSlides: true,
-  // initialSlide: 0,
   breakpoints: {
     320: {
       slidesPerView: 1,

@@ -3,6 +3,11 @@
     margin: 25px 0 10px 0;
 }
 
+#home {
+    position: absolute;
+    top: -100px;
+}
+
 .home-line__title{
     width: 75px;
     height: 4px;

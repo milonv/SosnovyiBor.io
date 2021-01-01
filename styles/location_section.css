@@ -4,6 +4,11 @@
     padding: 30px 25px 0 25px;
 }
 
+#location {
+    position: absolute;
+    top: -60px;
+}
+
 .birds5 {
     position: absolute;
     right: 0;
@@ -232,15 +237,18 @@
     .specification-location {
         width: 100%;
         display: flex;
-        justify-content: space-between;
         order: 4;
     }
 
     .location-specification {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-direction: row;
         margin: 0;
+    }
+
+    .specification-location > .location-specification:nth-child(1){
+        margin-right: 60px;
     }
 
 }
