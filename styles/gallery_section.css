@@ -18,9 +18,9 @@
     transform: translate(-50%, -50%);
 }
 
-.birds11.open {
+/* .birds11.open {
     top: 8%;
-}
+} */
 
 .birds11 > img{
     width: 240px;
