@@ -41,8 +41,15 @@
     position: relative;
 }
 .form__input {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0 35px 0 35px;
 }
 .application {
@@ -54,9 +61,18 @@
 .input-label {
     font-size: 13px;
     color: var(--beigeColor);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     margin: 0 0 35px 0;
 }
 
@@ -67,7 +83,8 @@
     border-right-style: none;
     background-color: var(--blueColor);
     border-color: var(--beigeColor);
-    border-radius: 0;
+    -webkit-border-radius: 0;
+            border-radius: 0;
     font-family: var(--beigeColor);
     font-size: 13px;
     outline: none;
@@ -82,7 +99,8 @@ input:focus{
 
 .form__button {
     border: 1px solid var(--beigeColor);
-    border-radius: 12px;
+    -webkit-border-radius: 12px;
+            border-radius: 12px;
     background-color: var(--blueColor);
     color: var(--beigeColor);
     height: 23px;
@@ -112,24 +130,41 @@ input:focus{
 }
 
 .adress-link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-self: flex-end;
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
     margin: 0 0 40px 0;
 }
 
 .adress-link > p{
     margin: 0 0 0 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 .adress-sign {
     width: 16px;
     height: auto;
 }
 .social-media__footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     width: 185px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 20px 0 0 20px;
 }
 .insta {}
@@ -141,6 +176,9 @@ input:focus{
     .footer {
         width: 768px;
         margin: 0 auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
         padding: 0 0 190px 0;
     }
@@ -163,8 +201,15 @@ input:focus{
     }
 
     .form__input {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding: 0 0 0 70px;
     }
 
