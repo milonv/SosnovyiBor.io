@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сосновый бор</title>
     <link rel="icon" href="#" type="image/x-icon">
+
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"> -->
+    <link rel="stylesheet" href="./styles/lightbox.min.css">
     <link rel="stylesheet" href="./styles/main_styles.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="line-design-768">
@@ -448,6 +451,41 @@
                     </div>
                 </div>
             </div>
+
+            <div class="gallery-slider-desktop">
+                <div class="gallery-slides-desktop">
+                    <div class="gallery-slide-desktop">
+                        <a href="./image/1-4k poor.jpg" data-lightbox="floor" data-title="1-4k poor">
+                            <img src="./image/1-4k poor.jpg" alt="gallery-slide">
+                        </a>
+                    </div>
+                    <div class="gallery-slide-desktop">
+                        <a href="./image/2-к poor.jpg" data-lightbox="floor" data-title="2k poor">
+                            <img src="./image/2-к poor.jpg" alt="gallery-slide">
+                        </a>
+                    </div>
+                    <div class="gallery-slide-desktop">
+                        <a href="./image/3-к poor.jpg" data-lightbox="floor" data-title="3k poor">
+                            <img src="./image/3-к poor.jpg" alt="gallery-slide">
+                        </a>
+                    </div>
+                    <div class="gallery-slide-desktop">
+                        <a href="./image/4-к poor.jpg" data-lightbox="floor" data-title="4k poor">
+                            <img src="./image/4-к poor.jpg" alt="gallery-slide">                        
+                        </a>
+                    </div>
+                    <div class="gallery-slide-desktop">
+                        <a href="./image/5-к poor.jpg" data-lightbox="floor" data-title="5k poor">
+                            <img src="./image/5-к poor.jpg" alt="gallery-slide">                        
+                        </a>
+                    </div>
+                    <div class="gallery-slide-desktop">
+                        <a href="./image/6-к poor.jpg" data-lightbox="floor" data-title="6k poor">
+                            <img src="./image/6-к poor.jpg" alt="gallery-slide">                        
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -509,6 +547,8 @@
             </div>
         </div>
     </footer> 
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
            $("#header-list").on("click","a", function (event) {
@@ -521,9 +561,13 @@
     </script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaJd_27fPVY7P_mq0UtatELfA6OfhLkTE&callback=initMap&libraries=&v=weekly"
-        defer
-  ></script>
+        defer>
+    </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script> -->
+    <!-- <script src="./script/lightbox-plus-jquery.min.js"></script> -->
+    <script src="./script/lightbox.js"></script>
+
     <script src="./script/index.js"></script>
 </body>
 </html>
