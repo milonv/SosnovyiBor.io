@@ -139,25 +139,25 @@
     padding-right: 3.2rem;
 }
 
-.insta {
-    background: url("../image/insta_label.png") top left / cover no-repeat var(--blueColor);
-    height: 1.4rem;
-    width: 1.4rem;
+.insta > a > img{
+    /* background: url("../image/insta_label.png") top left / cover no-repeat var(--blueColor); */
+    height: 14px;
+    width: 14px;
 }
-.messenger {
-    background: url("../image/whatsapp_label.png") top left / cover no-repeat var(--blueColor);
-    height: 1.4rem;
-    width: 1.4rem;
+.messenger > a > img{
+    /* background: url("../image/whatsapp_label.png") top left / cover no-repeat var(--blueColor); */
+    height: 14px;
+    width: 14px;
 }
-.facebook { 
-    background: url("../image/facebook_label.png") top left / cover no-repeat var(--blueColor);
-    height: 1.4rem;
-    width: 1.4rem;
+.facebook > a > img{ 
+    /* background: url("../image/facebook_label.png") top left / cover no-repeat var(--blueColor); */
+    height: 14px;
+    width: 14px;
 }
-.youtube {
-    background: url("../image/youtube_label.png") top left / cover no-repeat var(--blueColor);
-    height: 0.9rem;
-    width: 1.3rem;
+.youtube > a > img {
+    /* background: url("../image/youtube_label.png") top left / cover no-repeat var(--blueColor); */
+    height: 9px;
+    width: 13px;
 } 
 
 .header-list {
