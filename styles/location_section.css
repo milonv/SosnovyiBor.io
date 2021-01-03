@@ -50,6 +50,7 @@
     height: 130px;
     width: 275px;
     margin: 0 0 15px 0;
+    z-index: 15;
 }
 
 .location-description p {

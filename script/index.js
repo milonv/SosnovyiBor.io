@@ -94,4 +94,14 @@ galleryArrowUp.addEventListener("click", () => {
 
 
 
+// button more
+const more1 = document.querySelector(".read-1");
+const more2 = document.querySelector(".read-2");
 
+more1.addEventListener("click", (e) => {
+  // e.preventDefault();
+
+  document.querySelector(".box").classList.toggle("open");
+  // more1.classList.add('open');
+  //document.querySelector(".read-2").classList.add("open");
+});
