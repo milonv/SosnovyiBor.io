@@ -1,6 +1,3 @@
-// const { default: Swiper } = require("Swiper");
-
-
 const burger = document.querySelector(".burger");
 const menu = document.querySelector(".header-menu");
 const body = document.querySelector("body");
@@ -69,8 +66,6 @@ function initMap() {
   }
 }
 
-//gallery slider
-
 const galleryArrow = document.querySelector(".arrow");
 
 galleryArrow.addEventListener("click", () => {
@@ -91,17 +86,10 @@ galleryArrowUp.addEventListener("click", () => {
   document.querySelector(".gallery-slides > .gallery-slide:nth-child(6)").classList.remove("open");
 });
 
-
-
-
-// button more
 const more1 = document.querySelector(".read-1");
 const more2 = document.querySelector(".read-2");
 
 more1.addEventListener("click", (e) => {
-  // e.preventDefault();
-
+  e.preventDefault();
   document.querySelector(".box").classList.toggle("open");
-  // more1.classList.add('open');
-  //document.querySelector(".read-2").classList.add("open");
 });
