@@ -1,3 +1,4 @@
+
 .layouts {
     padding: 25px 0 50px 0;
     position: relative;
@@ -25,9 +26,15 @@
 }
 .layouts-slide {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .layouts-slide__img {
     
@@ -61,17 +68,19 @@
     width: 200px;
     top: 100%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 768px) {
 
     .layouts {
         padding: 60px 0 100px 0;
-        position: relative;
         width: 768px;
         margin: 0 auto;
     }
+
     .birds7 {
         display: block;
         position: absolute;
@@ -97,7 +106,7 @@
     .layouts-title {
         font-size: 33px;
     }
-    .layouts-slider {}
+
     .layouts-slides {
         padding: 0 0 20px 0;
     }
@@ -113,8 +122,6 @@
         margin: 0 auto;
     }
     .birds7 {
-        display: block;
-        position: absolute;
         top: 70px;
         left: 90px;
     }
@@ -124,8 +131,6 @@
         height: auto;
     }
     .birds8 {
-        display: block;
-        position: absolute;
         top: 130px;
         right: 200px;
     }
@@ -137,7 +142,7 @@
     .layouts-title {
         font-size: 33px;
     }
-    .layouts-slider {}
+
     .layouts-slides {
         padding: 0 0 20px 0;
     }
