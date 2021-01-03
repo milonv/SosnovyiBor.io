@@ -284,6 +284,7 @@
 @media screen and (min-width: 1024px) {
     .project {
         width: 1024px;
+        margin-bottom: 70px;
     }
     
     .birds3 {
