@@ -1,3 +1,4 @@
+
 .gallery {
     padding: 15px 15px 15px 10px;
     position: relative;
@@ -20,7 +21,9 @@
     position: absolute;
     top: 120px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 .birds11 > img{
@@ -51,11 +54,15 @@
     overflow: hidden;
     height: 667px;
     width:100%;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 
 .gallery-slider.open {
     height: 100%;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
     transition: all 1s ease;
 }
 
@@ -102,7 +109,9 @@
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     cursor: pointer;
 }
 
@@ -114,7 +123,9 @@
     height: 20px;
     width: auto;
     cursor: pointer;
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
     margin: 20px auto;
 }
 
@@ -180,13 +191,20 @@
     }
 
     .gallery-slider-desktop {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     
     .gallery-slides-desktop {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between; 
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; 
     }
 
 
@@ -297,9 +315,14 @@
     }
 
     .gallery-slides-desktop {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start; 
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; 
     }
 
     .gallery-slides-desktop > .gallery-slide-desktop:nth-child(1) {
