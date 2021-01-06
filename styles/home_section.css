@@ -239,8 +239,8 @@
 	.location__background,
 	.modern-douplex__background,
 	.security__background {
-		/* -webkit-animation-name: slideDown;
-		animation-name: slideDown; */
+		-webkit-animation-name: slideDown;
+		animation-name: slideDown;
 		-webkit-animation-timing-function: ease;
 		animation-timing-function: ease;
 		-webkit-animation-iteration-count: infinite;
@@ -281,8 +281,8 @@
 	.location-title__container,
 	.security-title__container {
 		z-index: 5;
-		/* -webkit-animation-name: slideRight;
-		animation-name: slideRight; */
+		-webkit-animation-name: slideRight;
+		animation-name: slideRight;
 		-webkit-animation-timing-function: ease-in-out;
 		animation-timing-function: ease-in-out;
 		-webkit-animation-iteration-count: infinite;
