@@ -13,12 +13,16 @@ new Swiper('.home-slider', {
     el: '.swiper-scrollbar',
     draggable: true
   },
+  // autoplay: {
+  //   delay: 3500,
+  // },
   speed: 800,
   grabCursor: true,
   slideToClickedSlide: true,
   slidesPerView: 1,
   spaceBetween: 20,
   centeredSlides: true,
+  loop: true,
 });
 
 new Swiper('.layouts-slider', {
