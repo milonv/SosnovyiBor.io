@@ -50,20 +50,15 @@
 	text-align: justify
 }
 .specification-location {
-	width: 100%;
-	margin: 20px 0 0
-}
-.location-specification {
+	margin: 20px 0 0;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	/* align-items: flex-end; */
-	flex-direction: row;
-	margin: 0 0 10px
 }
 .location-specification__container>p {
-	font-size: 7px;
+	font-size: 10px;
 	color: var(--beigeColor);
-	margin: 5px 0 0;
+	margin: 10px 0 0;
     text-align: center;
     text-transform: uppercase;
 }
@@ -71,17 +66,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+	align-items: center;
+	width: 50%;
+	margin: 0 0 20px 0;
 }
-.location-specification>.location-specification__container:nth-child(1)>img,
-.location-specification>.location-specification__container:nth-child(4)>img {
-    width: 35px;
+.specification-location>.location-specification__container>img{
+    width: 60px;
 	height: auto
 }
-.location-specification>.location-specification__container:nth-child(2)>img,
-.location-specification>.location-specification__container:nth-child(3)>img,
-.location-specification>.location-specification__container:nth-child(5)>img {
-    width: 30px;
+.specification-location>.location-specification__container:nth-child(2)>img,
+.specification-location>.location-specification__container:nth-child(3)>img,
+.specification-location>.location-specification__container:nth-child(9)>img{
+    width: 50px;
 	height: auto
 }
 @media screen and (min-width: 768px) {
@@ -106,7 +102,7 @@
 	.birds6 {
 		display: block;
 		right: 20px;
-		bottom: -15px
+		bottom: -25px
 	}
 	.birds6>img {
 		width: 130px;
@@ -121,7 +117,9 @@
 	}
 	#map {
 		height: 160px;
-		width: 100%
+		width: 100%;
+		margin: 0 0 10px;
+
 	}
 	.location-container {
 		display: flex;
@@ -134,21 +132,34 @@
 		text-align: start
 	}
 	.specification-location {
-		width: 100%;
+		margin: 10px 0 0;
 		display: flex;
-		margin: 5px 15px 0 -20px
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		margin: 10px 0 10px -30px;
+	}
+	.location-specification__container{
+		width: 9.8%;
+		margin:0;
 	}
 	.location-specification__container>p {
-		font-family: 15px;
+		font-size: 7px;
 		margin: 10px 0 0
 	}
-	.location-specification {
-		width: 50%
+	.specification-location>.location-specification__container>img{
+		width: 35px;
+		height: auto
+	}
+	.specification-location>.location-specification__container:nth-child(2)>img,
+	.specification-location>.location-specification__container:nth-child(3)>img,
+	.specification-location>.location-specification__container:nth-child(9)>img{
+		width: 30px;
+		height: auto
 	}
 }
 @media screen and (min-width: 1024px) {
 	.location {
-		padding: 65px 70px;
+		padding: 55px 70px;
 		position: relative;
 		width: 1024px;
 		margin: 0 auto
@@ -180,32 +191,27 @@
 		margin: 60px 0 0;
 		padding: 0 40px 0 0
 	}
+	.location-specification__container{
+		width: 10.2%;
+	}
 	.location-description>p {
 		text-align: start
 	}
 	.specification-location {
-		width: 100%;
-        display: flex;
-		order: 4
+		order: 4;
+		width: 105%;
 	}
-	.location-specification {
-		display: flex;
-		justify-content: space-between;
-		flex-direction: row;
-		margin: 0
-    }
-    .location-specification>.location-specification__container:nth-child(1)>img,
-    .location-specification>.location-specification__container:nth-child(4)>img {
-        width: 50px;
-        height: auto
-    }
-    .location-specification>.location-specification__container:nth-child(2)>img,
-    .location-specification>.location-specification__container:nth-child(3)>img,
-    .location-specification>.location-specification__container:nth-child(5)>img {
-        width: 45px;
-        height: auto
-    }
-	.specification-location>.location-specification:nth-child(1) {
-		margin-right: 20px
+	.location-specification__container>p {
+		font-size: 8px;
+	}
+	.specification-location>.location-specification__container>img{
+		width: 50px;
+		height: auto
+	}
+	.specification-location>.location-specification__container:nth-child(2)>img,
+	.specification-location>.location-specification__container:nth-child(3)>img,
+	.specification-location>.location-specification__container:nth-child(9)>img{
+		width: 45px;
+		height: auto
 	}
 }
