@@ -50,26 +50,6 @@ new Swiper('.layouts-slider', {
   loop: true,
 });
 
-function initMap() {
-  const el = document.getElementById("map");
-  const options = {
-    zoom: 17,
-    center: {lat: 50.4904611, lng: 30.6788559}
-  }
-  const myMap = new google.maps.Map(el, options);
-
-  addMarker({lat: 50.4904611, lng: 30.6788559});
-  addMarker({lat: 50.4906317, lng: 30.6796814});
-  
-
-  function addMarker(coordinates) {
-    const marker = new google.maps.Marker({
-      position: coordinates,
-      map: myMap
-    })
-  }
-}
-
 const galleryArrow = document.querySelector(".arrow");
 
 galleryArrow.addEventListener("click", () => {
@@ -97,3 +77,70 @@ more1.addEventListener("click", (e) => {
   e.preventDefault();
   document.querySelector(".box").classList.toggle("open");
 });
+
+document.addEventListener('DOMContentLoaded', function (){
+  const form = document.getElementById('form');
+  form.addEventListener('submit', formSend);
+
+  async function formSend(e) {
+    e.preventDefault();
+
+    let error = formValidate(form);
+    let formData = new FormData(form);
+
+    if(error===0){
+      form.classList.add('_sending');
+      let response = await fetch(sendEmail.php, {
+        method: 'POST',
+        body: formData
+      });
+
+      if(response.ok){
+        let result = await response.json();
+        alert(result.message);
+        formPreview.innerHTML = '';
+        form.reset();
+        form.classList.remove('_sending');
+      }else{
+        alert('Ошибка');
+        form.classList.remove('_sending');
+      }
+    }else{
+      alert('Заполните обязательные поля!')
+    }
+  }
+
+  function formValidate(){
+    let error = 0;
+    let formReq = document.querySelectorAll('._req');
+
+    for(let index = 0; index < formReq.length; index++){
+      const input = formReq[index];
+
+      formRemoveError(input);
+      if(input.classList.contains('input-email')){
+        if(emailTest(input)){
+          formAddError(input);
+          error++;
+        }else{
+          if(input.value === ''){
+            formRemoveError(input);
+            error++;
+          }
+        }
+      }
+    }
+    return error;
+  }
+  function formAddError(input){
+    input.parentElement.classList.add('_error');
+    input.classList.add('_error');
+  }
+  function formRemoveError(input){
+    input.parentElement.classList.remove('_error');
+    input.classList.remove('_error');
+  }
+  function emailTest(input){
+    return /^w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value)
+  }
+})
