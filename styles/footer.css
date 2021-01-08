@@ -129,6 +129,9 @@ input:focus {
 	right: 35px;
 	bottom: -20px
 }
+.form__button:active, .form__button:focus {
+	outline: none !important;
+}
 .footer-description {
 	padding: 30px 35px 0
 }
