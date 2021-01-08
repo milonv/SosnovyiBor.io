@@ -198,6 +198,7 @@ input:focus {
         width: 50%;
 	}
 	#form::after {
+		width: 90%;
 		left: 70px;
 	}
 	.form__input {
