@@ -19,10 +19,10 @@ new Swiper('.home-slider', {
   speed: 800,
   grabCursor: true,
   slideToClickedSlide: true,
-  slidesPerView: 1,
+  // slidesPerView: 1,
   spaceBetween: 20,
   centeredSlides: true,
-  loop: true,
+  // loop: true,
 });
 
 new Swiper('.layouts-slider', {
