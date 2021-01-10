@@ -11,7 +11,7 @@
     $mail->IsHTML(true);
     
     //от кого письмо
-    $mail->setFrom('', 'Заявка с сайта');
+    $mail->setFrom('milonova.nastasia@gmail.com', 'Заявка с сайта');
     $mail->addAdress('milonova.nastasia@gmail.com');
     $mail->Subject = 'Заявка с сайта';
     

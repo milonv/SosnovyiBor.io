@@ -1,3 +1,4 @@
+"use strict"
 const burger = document.querySelector(".burger");
 const menu = document.querySelector(".header-menu");
 const body = document.querySelector("body");
@@ -106,11 +107,11 @@ document.addEventListener('DOMContentLoaded', function (){
         form.classList.remove('_sending');
       }
     }else{
-      alert('Заполните обязательные поля!')
+      alert('Заполните все поля!')
     }
   }
 
-  function formValidate(){
+  function formValidate(form){
     let error = 0;
     let formReq = document.querySelectorAll('._req');
 
@@ -118,15 +119,16 @@ document.addEventListener('DOMContentLoaded', function (){
       const input = formReq[index];
 
       formRemoveError(input);
+
       if(input.classList.contains('input-email')){
         if(emailTest(input)){
           formAddError(input);
           error++;
-        }else{
-          if(input.value === ''){
-            formRemoveError(input);
-            error++;
-          }
+        }
+      }else{
+        if(input.value === ''){
+          formRemoveError(input);
+          error++;
         }
       }
     }
@@ -141,6 +143,6 @@ document.addEventListener('DOMContentLoaded', function (){
     input.classList.remove('_error');
   }
   function emailTest(input){
-    return /^w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value)
+    return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value)
   }
 })
