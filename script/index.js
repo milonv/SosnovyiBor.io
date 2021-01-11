@@ -55,7 +55,7 @@ const galleryArrow = document.querySelector(".arrow");
 
 galleryArrow.addEventListener("click", () => {
   document.querySelector(".gallery-slider").classList.toggle("open");
-  document.querySelector(".birds11").classList.toggle("open");
+  // document.querySelector(".birds11").classList.toggle("open");
   document.querySelector(".gallery-slides > .gallery-slide:nth-child(4) > .gallery-slide4").classList.toggle("open");
   galleryArrow.classList.toggle("open");
   document.querySelector(".gallery-slides > .gallery-slide:nth-child(6)").classList.toggle("open");
@@ -65,7 +65,7 @@ const galleryArrowUp = document.querySelector(".arrow-up");
 
 galleryArrowUp.addEventListener("click", () => {
   document.querySelector(".gallery-slider").classList.remove("open");
-  document.querySelector(".birds11").classList.remove("open");
+  // document.querySelector(".birds11").classList.remove("open");
   document.querySelector(".gallery-slides > .gallery-slide:nth-child(4) > .gallery-slide4").classList.remove("open");
   galleryArrow.classList.remove("open");
   document.querySelector(".gallery-slides > .gallery-slide:nth-child(6)").classList.remove("open");
