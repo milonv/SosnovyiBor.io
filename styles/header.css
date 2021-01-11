@@ -52,7 +52,6 @@
 	width: 27%
 }
 .phone-label {
-	background: url(../image/phone.png) top left/cover no-repeat var(--blueColor);
 	width: 2rem;
 	height: 2.3rem
 }
