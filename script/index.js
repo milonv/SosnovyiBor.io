@@ -26,11 +26,23 @@ for (let anchor of anchors) {
   if (anchor.getAttribute('href') != '#') {
     anchor.addEventListener('click', function (e) {
       e.preventDefault()
-      
+
       burger.classList.remove("active");
       menu.classList.remove("active");
       body.classList.remove("lock");
     })
+  }
+}
+
+document.addEventListener("click", closeBurger);
+
+function closeBurger(event) {
+  const header = document.querySelector(".header");
+  let isClickInside = header.contains(event.target);
+  console.log(isClickInside);
+
+  if (!isClickInside) {
+    menu.classList.remove('active');
   }
 }
 
