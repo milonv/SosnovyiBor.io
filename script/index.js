@@ -43,6 +43,8 @@ function closeBurger(event) {
 
   if (!isClickInside) {
     menu.classList.remove('active');
+    body.classList.remove("lock");
+    burger.classList.remove("active");
   }
 }
 
