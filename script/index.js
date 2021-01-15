@@ -39,7 +39,6 @@ function closeBurger(event) {
 
   if (!isClickInside) {
     menu.classList.remove('active');
-    body.classList.remove("lock");
     burger.classList.remove("active");
   }
 }
@@ -50,6 +49,8 @@ function touchScroll() {
   document.querySelector(".box").classList.remove("open");
   document.querySelector(".read-1").classList.remove("open");
   document.querySelector(".read-2").classList.remove("open");
+  menu.classList.remove('active');
+  burger.classList.remove("active");
 }
 
 new Swiper('.home-slider', {
