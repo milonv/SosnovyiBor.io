@@ -33,9 +33,9 @@
         <img src="./image/line_design_1024.png" alt="design">
     </div>
     <header class="header">
-        <div class="logo">
+        <a class="logo" id="logo" href="#home-logo" onclick="return up()">
             <img class="logo__image" src="./image/Logo.png" alt="logo">
-        </div>
+        </a>
         <div class="header-burger">
             <a class="phone-label" href="tel:+380503997000">
                 <img src="./image/phone.png" alt="phone">
@@ -84,6 +84,7 @@
     <main class="main">
         <section class="home">
             <span id="home"></span>
+            <span id="home-logo"></span>
             <div class="home-line__title"></div>
             <div class="home-birds">
                 <img class="home-birds__image" src="./image/birds1.png" alt="home-tree">
@@ -188,6 +189,7 @@
                             </p>
                         </div>
                         <a class="read-1" href="#">...еще</a>
+                        <a class="read-2" href="#">...свернуть</a>
                     </div>
                 </div>
                 <div class="project-specification">
@@ -455,47 +457,59 @@
                 <div class="layouts-slides swiper-wrapper">
 
                     <div class="layouts-slide swiper-slide">
-                        <img class="layouts-slide__img" src="./image/Plane_3.jpg" alt="layouts-slide">
-                        <div class="layouts-slide__description">
-                            <p>1a этаж</p>
-                        </div>
+                        <a href="./image/Plane_3.jpg" data-lightbox="layout" data-title="1a этаж">
+                            <img class="layouts-slide__img" src="./image/Plane_3.jpg" alt="layouts-slide">
+                            <div class="layouts-slide__description">
+                                <p>1a этаж</p>
+                            </div>
+                        </a>
                     </div>
 
                     <div class="layouts-slide swiper-slide">
-                        <img class="layouts-slide__img" src="./image/Plane_5.jpg" alt="layouts-slide">
-                        <div class="layouts-slide__description">
-                            <p>2а этаж</p>
-                        </div>
+                        <a href="./image/Plane_5.jpg" data-lightbox="layout" data-title="2а этаж">
+                            <img class="layouts-slide__img" src="./image/Plane_5.jpg" alt="layouts-slide">
+                            <div class="layouts-slide__description">
+                                <p>2а этаж</p>
+                            </div>
+                        </a>
+
                     </div>
                     
                     <div class="layouts-slide swiper-slide">
-                        <img class="layouts-slide__img" src="./image/Plane_1.jpg" alt="layouts-slide">
-                        <div class="layouts-slide__description">
-                            <p>3а этаж</p>
-                        </div>
+                        <a href="./image/Plane_1.jpg" data-lightbox="layout" data-title="3а этаж">
+                            <img class="layouts-slide__img" src="./image/Plane_1.jpg" alt="layouts-slide">
+                            <div class="layouts-slide__description">
+                                <p>3а этаж</p>
+                            </div>
+                        </a>
                     </div>
 
                      <div class="layouts-slide swiper-slide">
-                        <img class="layouts-slide__img" src="./image/Plane_4.jpg" alt="layouts-slide">
-                        <div class="layouts-slide__description">
-                            <p>1b этаж</p>
-                        </div>
+                        <a href="./image/Plane_4.jpg" data-lightbox="layout" data-title="1b этаж">
+                            <img class="layouts-slide__img" src="./image/Plane_4.jpg" alt="layouts-slide">
+                            <div class="layouts-slide__description">
+                                <p>1b этаж</p>
+                            </div>
+                        </a>
                     </div>
 
                     <div class="layouts-slide swiper-slide">
-                        <img class="layouts-slide__img" src="./image/Plane_6.jpg" alt="layouts-slide">
-                        <div class="layouts-slide__description">
-                            <p>2b этаж</p>
-                        </div>
+                        <a href="./image/Plane_6.jpg" data-lightbox="layout" data-title="2b этаж">
+                            <img class="layouts-slide__img" src="./image/Plane_6.jpg" alt="layouts-slide">
+                            <div class="layouts-slide__description">
+                                <p>2b этаж</p>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="layouts-slide swiper-slide">
-                        <img class="layouts-slide__img" src="./image/Plane_2.jpg" alt="layouts-slide">
-                        <div class="layouts-slide__description">
-                            <p>3b этаж</p>
-                        </div>
+                    <div class="layouts-slide swiper-slide" data-lightbox="layout" data-title="3b этаж">
+                        <a href="./image/Plane_2.jpg">
+                            <img class="layouts-slide__img" src="./image/Plane_2.jpg" alt="layouts-slide">
+                            <div class="layouts-slide__description">
+                                <p>3b этаж</p>
+                            </div>
+                        </a>
                     </div>
-
                 </div>
                 <div class="swiper-scrollbar layouts-scrollbar"></div>
             </div>
@@ -611,7 +625,7 @@
             <ul>
                 <li class="adress-link">           
                     <img class="adress-sign" src="./image/footer_location.png" alt="location">
-                    <p>Адрес: Украина, Киев, с. Быковня</p>
+                    <p>Адрес: Украина, Киев, микрорайон Быковня</p>
                 </li>
                 <li class="phone-footer">тел: <a href="tel:+380503997000">+380503997000</a></li>
                 <li class="email-footer">email: <a href="mailto:office@sosnovy.bor.com.ua">office@sosnovy.bor.com.ua</a></li>
@@ -647,7 +661,7 @@
                event.preventDefault();
                var id  = $(this).attr('href'),
                    top = $(id).offset().top;
-               $('body,html').animate({scrollTop: top}, 1000);
+               $('body,html').animate({scrollTop: top}, 2000);
            });
        });
     </script>

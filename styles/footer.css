@@ -160,7 +160,8 @@ input:focus {
 .social-media__footer {
 	display: -webkit-box;
 	display: -ms-flexbox;
-	display: flex
+	display: flex;
+	align-items: center;
 }
 .social-media__footer {
 	width: 185px;

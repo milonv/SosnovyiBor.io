@@ -66,6 +66,8 @@
 	transform: rotate(-45deg)
 }
 .burger.active {
+	border-left: none;
+	border-top: none;
 	border-right: var(--beigeColor) solid 3px;
 	border-bottom: var(--beigeColor) solid 3px;
 	-webkit-transition: all .5s ease;
@@ -108,6 +110,7 @@
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+	align-items: center;
 	-webkit-box-ordinal-group: 4;
 	-webkit-order: 3;
 	-ms-flex-order: 3;
@@ -151,7 +154,7 @@
 .header-menu__item,
 .header-menu__link {
 	color: #fff;
-	font-size: 9px;
+	font-size: 12px;
 	font-family: var(--fontCeraPro)
 }
 .header-menu__link.active,
@@ -256,6 +259,10 @@
 		padding-top: 0;
 		padding-left: 0
 	}
+	.header-menu__item,
+	.header-menu__link {
+		font-size: 9px;
+	}
 	.phone {
 		-webkit-box-align: center;
 		-webkit-align-items: center;
@@ -279,23 +286,23 @@
 		-webkit-justify-content: space-around;
 		-ms-flex-pack: distribute;
 		justify-content: space-around;
-		width: 75%;
+		width: 80%;
 		padding-top: 0
 	}
 	.social-media {
-		padding-top: 2.7rem;
-		width: 18%;
+		padding-top: 0;
+		width: 15%;
 		-webkit-box-ordinal-group: 2;
 		-webkit-order: 1;
 		-ms-flex-order: 1;
 		order: 1
 	}
 	.header-list {
-		width: 47%
+		width: 62%
 	}
 	.header-menu__list {
 		width: 100%;
-		padding-top: 28px;
+		padding-top: 25px;
 		-webkit-box-ordinal-group: 3;
 		-webkit-order: 2;
 		-ms-flex-order: 2;
@@ -310,7 +317,7 @@
 	.border {
 		height: 2.5rem;
 		width: .2rem;
-		margin-right: 1.7rem;
+		margin-right: 1rem;
 		margin-bottom: 0;
 		margin-top: 0
 	}
@@ -335,6 +342,10 @@
 	}
 	.phone-number {
 		color: #fff;
-		font-size: 11px
+		font-size: 12px
+	}
+	.header-menu__item,
+	.header-menu__link {
+		font-size: 12px;
 	}
 }
