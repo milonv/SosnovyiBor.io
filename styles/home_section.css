@@ -252,7 +252,23 @@
 		visibility: visible!important;
 		-webkit-animation-duration: 4s;
 		animation-duration: 4s
-	}
+    }
+
+    /* .douplex-title__container,
+	.modern-douplex__background {
+		-webkit-animation-duration: 4s;
+		animation-duration: 4s
+    }
+    .location-title__container,
+	.location__background {
+		-webkit-animation-duration: 8s;
+		animation-duration: 8s
+    }
+    .security-title__container,
+	.security__background{
+		-webkit-animation-duration: 12s;
+		animation-duration: 12s
+    } */
 	@-webkit-keyframes slideDown {
 		0% {
 			-webkit-transform: translateY(-150%);

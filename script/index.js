@@ -6,7 +6,6 @@ const body = document.querySelector("body");
 burger.addEventListener("click", () => {
   burger.classList.toggle("active");
   menu.classList.toggle("active");
-  body.classList.toggle("lock");
 });
 
 
@@ -26,10 +25,8 @@ for (let anchor of anchors) {
   if (anchor.getAttribute('href') != '#') {
     anchor.addEventListener('click', function (e) {
       e.preventDefault()
-
       burger.classList.remove("active");
       menu.classList.remove("active");
-      body.classList.remove("lock");
     })
   }
 }
@@ -39,13 +36,20 @@ document.addEventListener("click", closeBurger);
 function closeBurger(event) {
   const header = document.querySelector(".header");
   let isClickInside = header.contains(event.target);
-  console.log(isClickInside);
 
   if (!isClickInside) {
     menu.classList.remove('active');
     body.classList.remove("lock");
     burger.classList.remove("active");
   }
+}
+
+window.addEventListener("scroll", touchScroll);
+
+function touchScroll() {
+  document.querySelector(".box").classList.remove("open");
+  document.querySelector(".read-1").classList.remove("open");
+  document.querySelector(".read-2").classList.remove("open");
 }
 
 new Swiper('.home-slider', {
@@ -92,13 +96,13 @@ new Swiper('.layouts-slider', {
 
 const arr = document.querySelectorAll('.layouts-slide');
 
-
 const galleryArrow = document.querySelector(".arrow");
 
 galleryArrow.addEventListener("click", () => {
   document.querySelector(".gallery-slider").classList.toggle("open");
-  document.querySelector(".gallery-slides > .gallery-slide:nth-child(4) > .gallery-slide4").classList.toggle("open");
+  document.querySelector(".gallery-slides > .gallery-slide:nth-child(4) > a > img:nth-child(1)").classList.toggle("open");
   galleryArrow.classList.toggle("open");
+  document.querySelector(".gallery-slides>.gallery-slide:nth-child(4)").classList.add("open");
   document.querySelector(".gallery-slides > .gallery-slide:nth-child(6)").classList.toggle("open");
 });
 
@@ -106,8 +110,9 @@ const galleryArrowUp = document.querySelector(".arrow-up");
 
 galleryArrowUp.addEventListener("click", () => {
   document.querySelector(".gallery-slider").classList.remove("open");
-  document.querySelector(".gallery-slides > .gallery-slide:nth-child(4) > .gallery-slide4").classList.remove("open");
+  document.querySelector(".gallery-slides > .gallery-slide:nth-child(4) > a > img:nth-child(1)").classList.remove("open");
   galleryArrow.classList.remove("open");
+  document.querySelector(".gallery-slides>.gallery-slide:nth-child(4)").classList.remove("open");
   document.querySelector(".gallery-slides > .gallery-slide:nth-child(6)").classList.remove("open");
 });
 

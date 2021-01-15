@@ -39,7 +39,7 @@
 .gallery-slider {
 	margin: 30px 0 0;
 	overflow: hidden;
-	height: 667px;
+	height: 800px;
 	width: 100%;
 	-webkit-transition: all .5s;
 	-o-transition: all .5s;
@@ -85,13 +85,10 @@
 	width: 295px
 }
 .gallery-slides>.gallery-slide:nth-child(4) {
-	position: relative
+	position: relative;
+	opacity: 0.5;
 }
-.gallery-slides>.gallery-slide:nth-child(4)>.gallery-slide4 {
-	height: 190px;
-	opacity: .5
-}
-.gallery-slides>.gallery-slide:nth-child(4)>.gallery-slide4.open {
+.gallery-slides>.gallery-slide:nth-child(4).open {
 	opacity: 1
 }
 .arrow,
