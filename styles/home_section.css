@@ -13,7 +13,7 @@
 	background-color: var(--beigeColor);
 	position: absolute;
 	top: 30px;
-	right: 0
+	right: -10px
 }
 .home-container {
 	padding: 0 25px 0 20px
@@ -49,16 +49,16 @@
 .security__background {
 	position: relative;
 	width: 28rem;
-	height: 16rem
+	height: 20rem
 }
 .modern-douplex__background {
-	background: url(../image/modern-douplex__bg.png) top/cover no-repeat
+	background: url(../image/modern-douplex__bg.png) top left/100% no-repeat
 }
 .location__background {
-	background: url(../image/location__bg.png) top/cover no-repeat
+	background: url(../image/location__bg.png) top/100% no-repeat
 }
 .security__background {
-	background: url(../image/security_bg.png) top/cover no-repeat
+	background: url(../image/security_bg.png) top/100% no-repeat
 }
 .frame {
 	left: 0;
