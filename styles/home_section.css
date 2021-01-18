@@ -235,7 +235,8 @@
 	.modern-douplex__background,
 	.security__background {
 		width: 57%;
-		height: 24rem
+		height: 24rem;
+		margin: 0 50px 0 0;
 	}
 	.title-border {
 		display: block;
