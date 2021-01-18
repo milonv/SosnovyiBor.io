@@ -57,6 +57,11 @@
 .swiper-slide.swiper-slide-active {
 	opacity: 1
 }
+.swiper-button-prev::after,
+.swiper-button-next::after{
+	margin-top: 0;
+	color: black;
+}
 @media screen and (min-width: 768px) {
 	.layouts {
 		padding: 60px 0 100px;
@@ -92,7 +97,7 @@
 }
 @media screen and (min-width: 1024px) {
 	.layouts {
-		padding: 100px 10px 30px 40px;
+		padding: 100px 10px 30px 0;
 		position: relative;
 		width: 1024px;
 		margin: 0 auto
@@ -114,6 +119,10 @@
 	}
 	.layouts-title {
 		font-size: 33px
+	}
+	.layouts-slider {
+		padding: 0 0 0 40px;
+		width: 102%;
 	}
 	.layouts-slides {
 		padding: 0 0 20px

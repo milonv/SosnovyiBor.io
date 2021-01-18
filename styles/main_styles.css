@@ -29,6 +29,9 @@ body {
 	position: relative;
 	overflow-x: hidden;
 }
+::-webkit-scrollbar {
+	width: 0;
+  }
 body.lock {
 	overflow: hidden
 }
