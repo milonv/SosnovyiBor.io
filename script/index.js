@@ -81,8 +81,8 @@ new Swiper('.layouts-slider', {
   speed: 800,
   grabCursor: true,
   slideToClickedSlide: true,
-  slidesPerView: 1,
   spaceBetween: 20,
+  initialSlide: 2,
   centeredSlides: true,
   breakpoints: {
     320: {
@@ -92,7 +92,7 @@ new Swiper('.layouts-slider', {
       slidesPerView: 3,
     }
   },
-  loop: true,
+  // loop: true,
 });
 
 const arr = document.querySelectorAll('.layouts-slide');
