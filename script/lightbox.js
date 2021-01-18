@@ -20,7 +20,7 @@
 		fadeDuration: 600,
 		fitImagesInViewport: true,
 		imageFadeDuration: 600,
-		// positionFromTop: 2500,
+		positionFromTop: 2500,
 		resizeDuration: 700,
 		showImageNumberLabel: false,
 		wrapAround: false,
@@ -155,7 +155,7 @@
 				}
 			}
 		}
-		var top = $window.scrollTop();
+		var top = $window.scrollTop() + this.options.positionFromTop;
 		var left = $window.scrollLeft();
 		this.$lightbox.css({
 			top: top + 'px',
