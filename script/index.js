@@ -96,15 +96,18 @@ new Swiper('.layouts-slider', {
     320: {
       slidesPerView: 1,
       initialSlide: 0,
+      loop: false,
     },
     768: {
       slidesPerView: 3,
+      loop: true,
     },
     1024: {
       slidesPerView: 3,
+      loop: true,
     }
   },
-  loop: true,
+  // loop: true,
 });
 
 // const arr = document.querySelectorAll('.layouts-slide');

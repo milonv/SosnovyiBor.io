@@ -153,8 +153,8 @@ input:focus {
 	align-items: flex-end
 }
 .adress-sign {
-	width: 16px;
-	height: 25px
+	width: 13px;
+	height: 18px
 }
 .adress-link>p,
 .social-media__footer {
@@ -211,6 +211,10 @@ input:focus {
 	.footer-description {
 		padding: 140px 35px 0 50px;
 		width: 50%
+	}
+	.adress-sign {
+		width: 15px;
+		height: 20px
 	}
 }
 @media screen and (min-width: 1024px) {
