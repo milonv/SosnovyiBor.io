@@ -59,8 +59,7 @@
 }
 .swiper-button-prev::after,
 .swiper-button-next::after{
-	margin-top: 0;
-	color: black;
+	display: none;
 }
 @media screen and (min-width: 768px) {
 	.layouts {
@@ -126,5 +125,11 @@
 	}
 	.layouts-slides {
 		padding: 0 0 20px
+	}
+	.swiper-button-prev::after,
+	.swiper-button-next::after{
+		display: block;
+		margin-top: 0;
+		color: black;
 	}
 }

@@ -237,7 +237,7 @@
 		-webkit-order: 2;
 		-ms-flex-order: 2;
 		order: 2;
-		padding-top: 1rem;
+		/* padding-top: 1rem; */
 		padding-right: 0;
 		width: 33%
 	}
