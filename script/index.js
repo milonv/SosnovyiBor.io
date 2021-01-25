@@ -39,9 +39,6 @@ new Swiper('.home-slider', {
     el: '.swiper-scrollbar',
     draggable: true
   },
-  autoplay: {
-    delay: 3200,
-  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -51,7 +48,6 @@ new Swiper('.home-slider', {
   slideToClickedSlide: true,
   spaceBetween: 20,
   centeredSlides: true,
-  // loop: true,
 });
 new Swiper('.layouts-slider', {
   scrollbar: {

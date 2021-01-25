@@ -258,16 +258,10 @@
 		-webkit-animation-iteration-count: infinite;
 		animation-iteration-count: infinite;
 		visibility: visible!important;
-		-webkit-animation-duration: 4s;
-		animation-duration: 4s
+		-webkit-animation-duration: 10s;
+		animation-duration: 10s
 	}
-	/* .douplex-title__container,
-	.location-title__container,
-	.security-title__container {
-		-webkit-animation-duration: 5s;
-		animation-duration: 5s
-	} */
-	/* @-webkit-keyframes slideDown {
+	@-webkit-keyframes slideDown {
 		0% {
 			-webkit-transform: translateY(-150%);
 			transform: translateY(-150%)
@@ -280,7 +274,7 @@
 			-webkit-transform: translateY(150%);
 			transform: translateY(150%)
 		}
-	} */
+	}
 	@keyframes slideDown {
 		0% {
 			-webkit-transform: translateY(-150%);
@@ -305,51 +299,51 @@
 		animation-timing-function: ease-in-out;
 		margin: 0 0 0 50px
 	}
-	/* @-webkit-keyframes slideRight {
+	@-webkit-keyframes slideRight {
 		0% {
 			-webkit-transform: translateX(-150%);
 			transform: translateX(-150%);
 			opacity: 0
 		}
 		10%,
-		20% {
-			opacity: 0
-		}
+		20%,
 		30%,
 		40%,
+		80% {
+			opacity: 0
+		}
 		50%,
-		60%,
-		80%  {
+		60% {
 			-webkit-transform: translateX(0);
 			transform: translateX(0);
 			opacity: 1
 		}
+		70% {
+			opacity: .5
+		}
 		90% {
 			-webkit-transform: translateX(180%);
 			transform: translateX(180%);
-			opacity: 0.5
+			opacity: 0
 		}
-		100% {
+		to {
 			-webkit-transform: translateX(200%);
 			transform: translateX(200%);
 			opacity: 0
 		}
-	} */
+	}
 	@keyframes slideRight {
 		0% {
-			-webkit-transform: translateX(-50%);
-			transform: translateX(-50%);
+			-webkit-transform: translateX(-150%);
+			transform: translateX(-150%);
 			opacity: 0
 		}
 		10%,
 		20%,
+		30%,
+		40%,
 		80% {
 			opacity: 0
-		}
-		30%,
-		40% {
-			-webkit-transform: translateX(0);
-			transform: translateX(0);
 		}
 		50%,
 		60% {
@@ -401,7 +395,7 @@
 		padding: 0
 	}
 	.home-slides>.home-slide:nth-child(1)>.douplex-title__container>.title-container>.home-title {
-		margin-left: 35px
+		margin-left: 50px
 	}
 	.title-container {
 		width: 45rem
