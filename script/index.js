@@ -51,7 +51,7 @@ new Swiper('.home-slider', {
   slideToClickedSlide: true,
   spaceBetween: 20,
   centeredSlides: true,
-  // loop: true,
+  loop: true,
 });
 new Swiper('.layouts-slider', {
   scrollbar: {
@@ -84,6 +84,7 @@ new Swiper('.layouts-slider', {
     1024: {
       slidesPerView: 3,
       loop: true,
+      infinite: true,
     }
   },
 });
