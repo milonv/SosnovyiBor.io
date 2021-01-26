@@ -40,7 +40,7 @@ new Swiper('.home-slider', {
     draggable: true
   },
   autoplay: {
-    delay: 3200,
+    delay: 4200,
   },
   navigation: {
     nextEl: '.swiper-button-next',

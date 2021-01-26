@@ -258,8 +258,8 @@
 		-webkit-animation-iteration-count: infinite;
 		animation-iteration-count: infinite;
 		visibility: visible!important;
-		-webkit-animation-duration: 4s;
-		animation-duration: 4s
+		-webkit-animation-duration: 5s;
+		animation-duration: 5s
 	}
 	/* .douplex-title__container,
 	.location-title__container,
@@ -286,7 +286,8 @@
 			-webkit-transform: translateY(-150%);
 			transform: translateY(-150%)
 		}
-		50% {
+		49.9999999991%,
+		66.6666666668%{
 			-webkit-transform: translateY(0);
 			transform: translateY(0)
 		}
@@ -357,7 +358,13 @@
 			transform: translateX(0);
 			opacity: 1
 		}
+		49.9999999991%,
+		66.6666666668% {
+		  transform: translateY(0);
+		  opacity: 1;
+		}
 		70% {
+			transform: translateY(0);
 			opacity: .5
 		}
 		90% {
