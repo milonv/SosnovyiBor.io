@@ -111,25 +111,6 @@
 	position: absolute;
 	top: 1.5px
 }
-.swiper-scrollbar,
-.swiper-scrollbar-drag {
-	background: var(--beigeColor);
-	border-radius: 0
-}
-.swiper-container-horizontal>.swiper-scrollbar {
-	width: 200px;
-	top: 100%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	height: 2px
-}
-.swiper-scrollbar-drag {
-	height: 4px;
-	top: -1px;
-	width: 66px
-}
 .home-birds,
 .home-title__sign,
 .title-border {

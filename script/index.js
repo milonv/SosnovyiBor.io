@@ -35,10 +35,10 @@ function closeBurger(event) {
   }
 }
 new Swiper('.home-slider', {
-  scrollbar: {
-    el: '.swiper-scrollbar',
-    draggable: true
-  },
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  //   draggable: true
+  // },
   autoplay: {
     delay: 4200,
   },
@@ -52,6 +52,18 @@ new Swiper('.home-slider', {
   spaceBetween: 20,
   centeredSlides: true,
   loop: true,
+  infinite: true,
+  on: {
+    init() {
+      this.el.addEventListener('click', () => {
+        this.autoplay.stop();
+      });
+
+      this.el.addEventListener('click', () => {
+        this.autoplay.start();
+      });
+    }
+  },
 });
 new Swiper('.layouts-slider', {
   scrollbar: {
