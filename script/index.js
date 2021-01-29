@@ -35,9 +35,9 @@ function closeBurger(event) {
   }
 }
 new Swiper('.home-slider', {
-  autoplay: {
-    delay: 3200,
-  },
+  // autoplay: {
+  //   delay: 3200,
+  // },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -107,3 +107,12 @@ new Swiper('.layouts-slider', {
     }
   },
 });
+
+window.addEventListener("touchstart", touchHandler, false);
+function touchHandler(event){
+  if(event.touches.length > 1){
+      //the event is multi-touch
+      //you can then prevent the behavior
+      event.preventDefault()
+  }
+}

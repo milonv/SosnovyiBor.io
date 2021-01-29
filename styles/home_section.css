@@ -232,7 +232,7 @@
 	.modern-douplex__background,
 	.security-title__container,
 	.security__background {
-		animation-name: slideDown;
+		/* animation-name: slideDown; */
 		animation-timing-function: ease;
 		animation-iteration-count: infinite;
 		visibility: visible!important;
@@ -257,8 +257,8 @@
 	.location-title__container,
 	.security-title__container {
 		z-index: 5;
-		-webkit-animation-name: slideRight;
-		animation-name: slideRight;
+		/* -webkit-animation-name: slideRight;
+		animation-name: slideRight; */
 		-webkit-animation-timing-function: ease-in-out;
 		animation-timing-function: ease-in-out;
 		margin: 0 0 0 50px
@@ -381,7 +381,7 @@
 		margin: 0 50px 0 0
 	}
 	.title-border {
-		width: 640px;
+		width: 420px;
 		height: 5px
 	}
 	.home-title__sign {
