@@ -35,9 +35,9 @@ function closeBurger(event) {
   }
 }
 new Swiper('.home-slider', {
-  // autoplay: {
-  //   delay: 3200,
-  // },
+  autoplay: {
+    delay: 3200,
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
