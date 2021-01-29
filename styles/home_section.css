@@ -232,40 +232,16 @@
 	.modern-douplex__background,
 	.security-title__container,
 	.security__background {
-		-webkit-animation-name: slideDown;
 		animation-name: slideDown;
-		-webkit-animation-timing-function: ease;
 		animation-timing-function: ease;
-		-webkit-animation-iteration-count: infinite;
 		animation-iteration-count: infinite;
 		visibility: visible!important;
-		-webkit-animation-duration: 5s;
-		animation-duration: 5s
+		animation-duration: 4s
 	}
-	/* .douplex-title__container,
-	.location-title__container,
-	.security-title__container {
-		-webkit-animation-duration: 5s;
-		animation-duration: 5s
-	} */
-	/* @-webkit-keyframes slideDown {
-		0% {
-			-webkit-transform: translateY(-150%);
-			transform: translateY(-150%)
-		}
-		50% {
-			-webkit-transform: translateY(0);
-			transform: translateY(0)
-		}
-		to {
-			-webkit-transform: translateY(150%);
-			transform: translateY(150%)
-		}
-	} */
 	@keyframes slideDown {
 		0% {
-			-webkit-transform: translateY(-150%);
-			transform: translateY(-150%)
+			-webkit-transform: translateY(-50);
+			transform: translateY(-50%)
 		}
 		49.9999999991%,
 		66.6666666668%{
@@ -319,8 +295,8 @@
 	} */
 	@keyframes slideRight {
 		0% {
-			-webkit-transform: translateX(-50%);
-			transform: translateX(-50%);
+			-webkit-transform: translateX(-20%);
+			transform: translateX(-20%);
 			opacity: 0
 		}
 		10%,
